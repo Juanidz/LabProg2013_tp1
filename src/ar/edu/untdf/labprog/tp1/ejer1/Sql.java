@@ -11,8 +11,8 @@ package ar.edu.untdf.labprog.tp1.ejer1;
 public class Sql {
 
     public void query(String type) {
-        Conn conn = null;
-        if (type.equals("oracle")) {
+        
+        /*if (type.equals("oracle")) {
             conn = new OracleConn();
         } else if (type.equals("mysql")) {
             conn = new MysqlConn();
@@ -21,7 +21,14 @@ public class Sql {
         } else {
             System.out.println("db no definida");
             return;
-        }
+        }*/
+        /**
+     *
+     * @param args
+     */}
+    public static void main (String args[])
+        {
+        Conexiones conn = new ConexionMysql();
         conn.query();
-    }
+        }
 }
